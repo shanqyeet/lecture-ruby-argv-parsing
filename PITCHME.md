@@ -69,7 +69,7 @@ end
 
 ### Parsing with built-in CSV library
 
-```
+```ruby
 data = CSV.read('test.csv')
 
 p data #=> see what you get here
@@ -99,7 +99,7 @@ See what happens when you add 'headers: true' into the CSV parameter
 
 ### Writing to file with plain Ruby
 
-```
+```ruby
 random = ["one plus one", "three minus one", "four times 2"]
 n = 0
 until n == 6
@@ -119,7 +119,7 @@ end
 
 ### Here you go
 
-```
+```ruby
 require 'csv'
 
 staff = [["name", "age"],["shanq", "30"],["liren","28"],["Nick","young"],["Sheng","old"],["sophie","mystery"]]
