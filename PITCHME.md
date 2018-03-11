@@ -7,7 +7,7 @@
 
 * ARGV is a convention in programming that goes back to the C language
 
-* it refers to "Argument Vecotr"
+* it refers to "Argument Vector"
 
 * it's basically a variable that contains arguments that are passed into a program through CLI
 
@@ -28,6 +28,9 @@ end
 p print
 ```
 
++++
+
+### Then...
 **In Command Line**
 
 ```
@@ -49,7 +52,7 @@ The third item is 'ARGV'
 
 ### Why we need to parse data?
 
-Transferring of data from one program to another
+It's simple, Think about how can you transfer data between programs
 
 +++
 
@@ -107,6 +110,28 @@ n += 1
 end 
 
 ```
+
++++
+
+### Now how can you write to your csv file?
+
++++
+
+### Here you go
+
+```
+require 'csv'
+
+staff = [["name", "age"],["shanq", "30"],["liren","28"],["Nick","young"],["Sheng","old"],["sophie","mystery"]]
+
+
+CSV.open('test.csv','w') do |x|
+	staff.each do |member|
+		x << member
+	end 
+end 
+```
+
 
 
 
