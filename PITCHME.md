@@ -140,7 +140,7 @@ echo - a built-in command in the bash and C shells that writes its arguments to 
 the ">>" operator - append the output to the file specified
 
 ```
-$ echo "Hellow World" >> test.rb
+$ echo "Hellow World" >> test.txt
 
 ```
 
