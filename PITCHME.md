@@ -70,8 +70,8 @@ end
 ### Parsing with built-in CSV library
 
 ```ruby
+require 'csv'
 data = CSV.read('test.csv')
-
 p data #=> see what you get here
 ```
 
@@ -79,17 +79,15 @@ p data #=> see what you get here
 
 ```ruby
 require 'csv'
-
 data = []
 CSV.foreach('test.csv', headers: true) do |row|
   puts row.inspect
   data << row
 end
-
 p data #=> see what you get
 
 ```
-See what happens when you add 'headers: true' into the CSV parameter
+See what happens when you remove 'headers: true' into the CSV parameter
 
 ---
 
