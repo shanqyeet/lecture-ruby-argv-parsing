@@ -130,6 +130,20 @@ CSV.open('test.csv','w') do |x|
 end 
 ```
 
+---
+# Bonus - Writing to File in CLI
+
++++
+
+echo - a built-in command in the bash and C shells that writes its arguments to standard output
+
+the ">>" operator - append the output to the file specified
+
+```
+$ echo "Hellow World" >> test.rb
+
+```
+
 
 
 
